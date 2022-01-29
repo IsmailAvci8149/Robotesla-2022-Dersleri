@@ -1,10 +1,8 @@
 package temeller; // Sýnýfýmýz hangi dosyanýn altýnda onu soyler.
 
-import java.util.Scanner;
-
 public class Veri_Tipleri_ve_Degiskenler {
 	
-	static String tarih = "24/11/2021"; //global deðiþkendir
+	static String tarih = "26/11/2021"; //global deðiþkendir
 
 	public static void main(String[] args) {
 		// <Özel Anahtar kelimeler> <Veri Tipini> <Deðiþken Adý> = <Deðeri>;
@@ -18,7 +16,7 @@ public class Veri_Tipleri_ve_Degiskenler {
 		// Karakterlerimiz: char 
 		// Mantýksal Deðer: boolean
 		final byte bit = 25;
-		short sh = 1589;
+		short sh = 1589; //float -> 1589.0
 		int tamsayi = 20256559;
 		long daha_uzun_tamsayi = 123456789101l; //Not: long tipindeki tanýmlamalarda sona L eklenir
 		
@@ -26,14 +24,15 @@ public class Veri_Tipleri_ve_Degiskenler {
 		double e = 2.71812181249;
 		
 		char karakter = 'A';
-		char karakter2 = 102;
+		char karakter2 = 102; //'f'
+		//char karakter2 = 'f'
 		
 		boolean p = true;
 		boolean q = false;
 		
 		int pi_tamsayýi = (int) pi;
 		
-		float short_float = (float) sh;
+		float short_float = sh;
 		
 		System.out.println(bit);
 		System.out.println(sh);
@@ -69,10 +68,10 @@ public class Veri_Tipleri_ve_Degiskenler {
 		
 		String isimler = "Ismail Avcý, Ahmet Akbal, Melike Doðan";
 		
-		Integer deger = 89; //Boxing
+		Integer deger = 89; //Boxing // Referansa primitif tip atamak
 		
 		System.out.println(isimler);
-		System.out.println(deger); //Unboxing
+		System.out.println(deger); //Unboxing // referanstan primitif tip almak
 		
 		//Boxing, Unboxing
 		//Boxing: bir deðeri referansa atamak
@@ -93,12 +92,14 @@ public class Veri_Tipleri_ve_Degiskenler {
 		int a;
 		a = 55;
 		
-		//Sabitler: "final"	
+		//Sabitler: "final"
 		
 		//Tip dönüþümleri: veri tiplerini birbirine çevirmemizi saðlar
 		//Metodla: 
-		//Casting: 
+		//Casting:  ()
 		
-		System.out.println(Integer.parseInt("2548"));
-	}
+		System.out.println(Integer.parseInt("2548")); 
+		
+		// NOT: Deðiþken adlarýna sayi ile baþlanamaz, boþluk býraklamaz, tek geçerli karakter ise "_"dir.
+	} 
 }
